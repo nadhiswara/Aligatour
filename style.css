@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(0deg, #e6f4ea 40%, #a3e635 100%) !important;
+  background: linear-gradient(90deg, #ffffff 0%, #e8f5e9 100%) !important;
   background-attachment: fixed;
   min-height: 90vh;
   color: #333;
@@ -160,19 +160,21 @@ header p {
 }
 
 .trip-card {
-  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 0%, #c5e596 100%);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  border: 1px solid #b2da7e;
 }
 
 .trip-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(180deg, #ffffff 0%, #b8e085 100%);
 }
 
 .card-img-container {
