@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aligatour and Travel - Perjalanan Wisata Terbaik Anda</title>
+
+  <!-- FontAwesome untuk Ikon Sosial Media & UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- File CSS Terpisah -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO HEADER -->
+  <header>
+    <!-- LOGO POJOK KIRI ATAS -->
+    <img src="logo.jpg" alt="Logo Aligatour" class="header-logo" />
+
+    <h1>Aligatour and Travel</h1>
+    <p>Solusi perjalanan wisata terbaik dan nyaman di Malang, Bromo, dan sekitarnya. Temukan pengalaman liburan tak terlupakan bersama kami!</p>
+
+    <!-- CARI PAKET TRIP -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Cari paket trip impian Anda..." />
+      <button onclick="searchTrip()"><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+
+  <!-- PAKET TRIP SECTION -->
+  <div class="container" id="paket-trip">
+    <div class="section-title">
+      <h2>Pilihan Paket Trip</h2>
+      <p>Pilih tanggal keberangkatan dan klik pada paket untuk melihat detail opsi layanan serta melakukan pemesanan</p>
+    </div>
+
+    <div class="trip-grid" id="tripGrid">
+
+      <!-- 1. Shuttle Ranupane -->
+      <div class="trip-card" onclick="openTripModal('shuttle-ranupane')" data-images='["shuttle1.jpg", "shuttle2.jpg"]'>
+        <div class="card-img-container">
+          <img src="shuttle1.jpg" alt="Shuttle Ranupane" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Shuttle Ranupane</div>
+          <div class="trip-desc">Transportasi shuttle aman dan nyaman menuju basecamp pendakian Ranupane.</div>
+          <div class="trip-price">Mulai Rp 800.000 / pax</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 2. City Tour Malang - Batu -->
+      <div class="trip-card" onclick="openTripModal('city-tour')" data-images='["citytour1.jpg", "citytour5.jpg", "citytour7.jpg"]'>
+        <div class="card-img-container">
+          <img src="citytour7.jpg" alt="City Tour Malang Batu" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">City Tour Malang - Batu</div>
+          <div class="trip-desc">Keliling destinasi hits, wisata petik apel, Museum Angkut, hingga Alun-Alun Batu.</div>
+          <div class="trip-price">Mulai Rp 500.000 / hari</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 3. Private Bromo -->
+      <div class="trip-card" onclick="openTripModal('private-bromo')" data-images='["bromo1.jpg", "bromo2.jpg", "bromo3.jpg", "bromo4.jpg"]'>
+        <div class="card-img-container">
+          <img src="bromo1.jpg" alt="Private Bromo" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Private Bromo</div>
+          <div class="trip-desc">Nikmati sunrise Bromo, Kawah Bromo, Pasir Berbisik, dan Savana dengan Jeep.</div>
+          <div class="trip-price">Mulai Rp 1.800.000 / group</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 4. Private Ranu Kumbolo -->
+      <div class="trip-card" onclick="openTripModal('ranu-kumbolo')" data-images='["rakum1.jpg", "rakum2.jpg"]'>
+        <div class="card-img-container">
+          <img src="bg header.jpg" alt="Private Ranu Kumbolo" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Private Ranu Kumbolo</div>
+          <div class="trip-desc">Pengalaman trekking & camping privat menikmati keindahan Danau Ranu Kumbolo.</div>
+          <div class="trip-price">Mulai Rp 1.400.000 / orang</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 5. Tumpak Sewu -->
+      <div class="trip-card" onclick="openTripModal('tumpak-sewu')" data-images='["waterfall1.jpg", "waterfall2.jpg", "waterfall4.jpg"]'>
+        <div class="card-img-container">
+          <img src="waterfall1.jpg" alt="Tumpak Sewu" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Tumpak Sewu</div>
+          <div class="trip-desc">Petualangan menuju Air Terjun Tumpak Sewu & Goa Tetes yang menakjubkan.</div>
+          <div class="trip-price">Mulai Rp 400.000 / orang</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 6. Private Ranu Regulo -->
+      <div class="trip-card" onclick="openTripModal('ranu-regulo')" data-images='["regulo1.jpg", "regulo2.jpg", "regulo3.jpg", "regulo4.jpg"]'>
+        <div class="card-img-container">
+          <img src="regulo1.jpg" alt="Private Ranu Regulo" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Private Ranu Regulo</div>
+          <div class="trip-desc">Camping ceria dan santai di tepi Danau Ranu Regulo yang syahdu dan asri.</div>
+          <div class="trip-price">Mulai Rp 400.000 / orang</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+      <!-- 7. Drop Off Juanda -->
+      <div class="trip-card" onclick="openTripModal('drop-juanda')" data-images='["juanda1.jpg", "juanda2.jpg"]'>
+        <div class="card-img-container">
+          <img src="juanda1.jpg" alt="Drop Off Juanda Airport" class="card-img">
+        </div>
+        <div class="trip-info">
+          <div class="trip-title">Drop Off Juanda Airport</div>
+          <div class="trip-desc">Layanan antar jemput nyaman dan tepat waktu ke Bandara Juanda Surabaya.</div>
+          <div class="trip-price">Mulai Rp 550.000 / mobil</div>
+          <button class="btn-detail">Lihat Pilihan Paket</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GALERI CUSTOMER SECTION -->
+  <div class="container" id="galeri-customer">
+    <div class="section-title">
+      <h2>Galeri Customer Kami</h2>
+      <p>Momen-momen keseruan liburan dan perjalanan tak terlupakan bersama Aligatour</p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- 1. Customer Bromo (Album 31 Foto) -->
+      <div class="gallery-item" onclick="openBromoGallery()">
+        <img src="Gbromo1.jpg" id="bromoGalleryImg" alt="Galeri Bromo">
+        <div class="gallery-overlay">
+          <span class="trip-tag"><i class="fas fa-th"></i> Album Private Bromo (31 Foto)</span>
+        </div>
+      </div>
+
+      <!-- 2. Customer Tumpak Sewu (Album 41 Foto Gwaterfall) -->
+      <div class="gallery-item" onclick="openTumpakGallery()">
+        <img src="Gwaterfall1.jpg" id="tumpakGalleryImg" alt="Galeri Tumpak Sewu">
+        <div class="gallery-overlay">
+          <span class="trip-tag"><i class="fas fa-th"></i> Album Tumpak Sewu (41 Foto)</span>
+        </div>
+      </div>
+
+      <!-- 3. City Tour Malang - Batu -->
+      <div class="gallery-item">
+        <img src="customer3.jpg" alt="Galeri Malang Batu">
+        <div class="gallery-overlay">
+          <span class="trip-tag">City Tour Malang - Batu</span>
+        </div>
+      </div>
+
+      <!-- 4. Private Ranu Kumbolo -->
+      <div class="gallery-item">
+        <img src="customer4.jpg" alt="Galeri Ranu Kumbolo">
+        <div class="gallery-overlay">
+          <span class="trip-tag">Private Ranu Kumbolo</span>
+        </div>
+      </div>
+
+      <!-- 5. Camping Ranu Regulo -->
+      <div class="gallery-item">
+        <img src="customer5.jpg" alt="Galeri Ranu Regulo">
+        <div class="gallery-overlay">
+          <span class="trip-tag">Camping Ranu Regulo</span>
+        </div>
+      </div>
+
+      <!-- 6. Shuttle Ranupane -->
+      <div class="gallery-item">
+        <img src="customer6.jpg" alt="Galeri Shuttle Ranupane">
+        <div class="gallery-overlay">
+          <span class="trip-tag">Shuttle Ranupane</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POP-UP MODAL DETAIL PAKET -->
+  <div id="tripModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeTripModal()">&times;</span>
+      <img id="modalImg" src="" alt="Paket Trip" class="modal-img">
+      <h2 id="modalTitle">Judul Paket</h2>
+      <p id="modalDesc" class="modal-desc">Deskripsi singkat paket trip.</p>
+
+      <div class="sub-package-section">
+        <h3>Pilih Varian Paket:</h3>
+        <div id="modalSubPackages" class="sub-package-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI BROMO (31 FOTO) -->
+  <div id="galleryModal" class="modal" style="display:none;">
+    <div class="modal-content gallery-modal-content">
+      <span class="close-btn" onclick="closeGalleryModal()">&times;</span>
+      
+      <!-- TAMPILAN GRID ALBUM BROMO -->
+      <div id="galleryAlbumView">
+        <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Bromo (31 Foto)</h3>
+        <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
+        <div id="albumGridContainer" class="album-grid"></div>
+      </div>
+
+      <!-- TAMPILAN PREVIEW LAYAR PENUH BROMO -->
+      <div id="gallerySingleView" style="display: none;">
+        <div class="lightbox-top-bar">
+          <button class="btn-back-album" onclick="showAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
+        </div>
+        <div class="lightbox-container">
+          <button class="nav-btn prev-btn" onclick="changeGalleryImg(-1)"><i class="fas fa-chevron-left"></i></button>
+          <img id="lightboxImg" src="Gbromo1.jpg" alt="Galeri Bromo" />
+          <button class="nav-btn next-btn" onclick="changeGalleryImg(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div id="galleryCounter" class="gallery-counter">Foto 1 dari 31</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI TUMPAK SEWU (41 FOTO) -->
+  <div id="tumpakGalleryModal" class="modal" style="display:none;">
+    <div class="modal-content gallery-modal-content">
+      <span class="close-btn" onclick="closeTumpakGalleryModal()">&times;</span>
+      
+      <!-- TAMPILAN GRID ALBUM TUMPAK SEWU -->
+      <div id="tumpakAlbumView">
+        <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Tumpak Sewu (41 Foto)</h3>
+        <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
+        <div id="tumpakAlbumGridContainer" class="album-grid"></div>
+      </div>
+
+      <!-- TAMPILAN PREVIEW LAYAR PENUH TUMPAK SEWU -->
+      <div id="tumpakSingleView" style="display: none;">
+        <div class="lightbox-top-bar">
+          <button class="btn-back-album" onclick="showTumpakAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
+        </div>
+        <div class="lightbox-container">
+          <button class="nav-btn prev-btn" onclick="changeTumpakGalleryImg(-1)"><i class="fas fa-chevron-left"></i></button>
+          <img id="tumpakLightboxImg" src="Gwaterfall1.jpg" alt="Galeri Tumpak Sewu" />
+          <button class="nav-btn next-btn" onclick="changeTumpakGalleryImg(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div id="tumpakGalleryCounter" class="gallery-counter">Foto 1 dari 41</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Aligatour and Travel</h3>
+        <p>Partner perjalanan terbaik Anda untuk mengeksplor keindahan Malang, Bromo, Semeru, dan sekitarnya.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/aligatour.malang?igsh=M290aG9iNzB3ZThs" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@aligatourtravel?_r=1&_t=ZS-98MLfxEqzA1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/628563532918" target="_blank" title="WhatsApp Admin"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:Aligatour.malang@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Hubungi Kami</h3>
+        <ul class="contact-list">
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/628563532918" target="_blank">+62 856-3532-918 (Admin)</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:Aligatour.malang@gmail.com">Aligatour.malang@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Jl. Royal Park River I, Pandanwangi, Kec. Blimbing, Kota Malang, Jawa Timur, Indonesia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aligatour and Travel. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- File JavaScript Terpisah -->
+  <script src="script.js"></script>
+</body>
+</html>
