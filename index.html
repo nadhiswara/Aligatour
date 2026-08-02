@@ -196,7 +196,13 @@
       <img id="modalImg" src="" alt="Paket Trip" class="modal-img">
       <h2 id="modalTitle">Judul Paket</h2>
       <p id="modalDesc" class="modal-desc">Deskripsi singkat paket trip.</p>
-
+      
+   <!-- FORM PILIH TANGGAL KEBERANGKATAN -->
+    <div class="date-picker-section" style="max-width: 500px; margin: 0 auto 30px auto;">
+      <label for="tripDate"><i class="fas fa-calendar-alt"></i> Pilih Tanggal Keberangkatan Anda:</label>
+      <input type="date" id="tripDate" class="date-input" onchange="updateWaLinks()" />
+    </div>
+      
       <div class="sub-package-section">
         <h3>Pilih Varian Paket:</h3>
         <div id="modalSubPackages" class="sub-package-list"></div>
