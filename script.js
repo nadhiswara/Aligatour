@@ -18,7 +18,7 @@ const tripData = {
   },
   "city-tour": {
     title: "City Tour Malang - Batu (Rent Car)",
-    images: ["citytour1.jpg", "citytour5.jpg", "citytour7.jpg"],
+    images: ["citytour1.jpg", "citytour5.jpg", "citytour7.jpg", "citytour8.jpg"],
     desc: "Sewa mobil + driver untuk keliling Malang & Batu. Include: Mobil, Driver, BBM, Welcome Snack/Drink, Powerbank, Wi-Fi. (Exclude: Tiket, Parkir, Tol, Konsumsi Driver).",
     subPackages: [
       { name: "Ignis / Agya / Ayla", detail: "Kapasitas 1-4 seats", price: "Rp 500.000 / hari" },
@@ -49,12 +49,12 @@ const tripData = {
     images: ["rakum1.jpg", "rakum2.jpg"],
     desc: "Pendakian Ranu Kumbolo (Durasi: 2 Hari 1 Malam). Bebas ribet war tiket SIMAKSI.",
     subPackages: [
-      { name: "Paket Ekonomis - Reguler", detail: "Include: Transport PP Malang-Ranu Pane, Simaksi, Asuransi TNBTS, Tour Leader, Dokumentasi, Porter Team, Tenda Big Adv, Matras, Kursi/Meja Lipat, Makan 5x, Fresh Fruits, P3K, Hand Warmer, Powerbank, Wi-Fi, Insta360 X4 / Gimbal", price: "Rp 1.400.000 / orang" },
-      { name: "Paket Exclusive - Reguler", detail: "Include: Seluruh fasilitas Ekonomis dengan peningkatan kualitas menu makanan & peralatan camping yang lebih lengkap", price: "Rp 1.600.000 / orang" },
-      { name: "Paket Luxury - Reguler", detail: "Include: Seluruh fasilitas Exclusive dengan layanan penuh, kenyamanan ekstra & perlengkapan terbaik", price: "Rp 1.700.000 / orang" },
-      { name: "Paket Ekonomis (Min. 2-4 Pax)", detail: "Include: Makanan Standar, 1 Fasilitas Unggulan, Menginap 2 Malam, Hand Warmer, Alat Camping Lengkap & Simaksi", price: "Rp 2.200.000 / orang" },
-      { name: "Paket Eksklusif (Min. 2-4 Pax)", detail: "Include: Daging Grill Premium, 1 Fasilitas Unggulan, Menginap 2 Malam, Hand Warmer, Pijat Setelah Trip, Sleeping Bag, Surat Sehat, Camilan Pribadi", price: "Rp 2.500.000 / orang" },
-      { name: "Paket Luxury Premium (Min. 2-4 Pax)", detail: "Include: Chef Pribadi, Semua Fasilitas Unggulan, Menginap 2 Malam, Hand Warmer, Pijat, Sleeping Bag, Surat Sehat, Camilan, Porter Pribadi, Fotografer Pribadi, FREE Trip Bromo", price: "Rp 2.600.000 / orang" }
+      { name: "Paket Ekonomis (Min. 6 pax)", detail: "Include: Transport PP Malang-Ranu Pane, Simaksi, Asuransi TNBTS, Tour Leader, Dokumentasi, Porter Team, Tenda Big Adv, Matras, Kursi/Meja Lipat, Makan 5x, Fresh Fruits, P3K, Hand Warmer, Powerbank, Wi-Fi, Insta360 X4 / Gimbal", price: "Rp 1.400.000 / orang" },
+      { name: "Paket Exclusive (Min. 6 pax)", detail: "Include: Seluruh fasilitas Ekonomis dengan peningkatan kualitas menu makanan & peralatan camping yang lebih lengkap", price: "Rp 1.600.000 / orang" },
+      { name: "Paket Luxury (Min. 6 pax)", detail: "Include: Seluruh fasilitas Exclusive dengan layanan penuh, kenyamanan ekstra & perlengkapan terbaik", price: "Rp 1.700.000 / orang" },
+      { name: "Paket Ekonomis (Min. 4-6 Pax)", detail: "Include: Makanan Standar, 1 Fasilitas Unggulan, Hand Warmer, Alat Camping Lengkap & Simaksi", price: "Rp 2.200.000 / orang" },
+      { name: "Paket Eksklusif (Min. 4-6 Pax)", detail: "Include: Daging Grill Premium, 1 Fasilitas Unggulan, Hand Warmer, Pijat Setelah Trip, Sleeping Bag, Surat Sehat, Camilan Pribadi", price: "Rp 2.500.000 / orang" },
+      { name: "Paket Luxury Premium (Min. 2-4 Pax)", detail: "Include: Chef Pribadi, Semua Fasilitas Unggulan, Hand Warmer, Pijat, Sleeping Bag, Surat Sehat, Camilan, Porter Pribadi, Fotografer Pribadi, FREE Trip Tumpak Sewu", price: "Rp 2.600.000 / orang" }
     ]
   },
   "tumpak-sewu": {
