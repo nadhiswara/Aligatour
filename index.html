@@ -45,19 +45,19 @@
         <div class="trip-info">
           <div class="trip-title">Shuttle Ranupane</div>
           <div class="trip-desc">Transportasi shuttle aman dan nyaman menuju basecamp pendakian Ranupane.</div>
-          <div class="trip-price">Mulai Rp 800.000 / pax</div>
+          <div class="trip-price">Mulai Rp 800.000 / mobil</div>
           <button class="btn-detail">Lihat Pilihan Paket</button>
         </div>
       </div>
 
       <!-- 2. City Tour Malang - Batu -->
-      <div class="trip-card" onclick="openTripModal('city-tour')" data-images='["citytour1.jpg", "citytour5.jpg", "citytour7.jpg"]'>
+      <div class="trip-card" onclick="openTripModal('city-tour')" data-images='["citytour1.jpg", "citytour5.jpg", "citytour7.jpg", "citytour8.jpg"]'>
         <div class="card-img-container">
           <img src="citytour7.jpg" alt="City Tour Malang Batu" class="card-img">
         </div>
         <div class="trip-info">
           <div class="trip-title">City Tour Malang - Batu</div>
-          <div class="trip-desc">Keliling destinasi hits, wisata petik apel, Museum Angkut, hingga Alun-Alun Batu.</div>
+          <div class="trip-desc">Keliling destinasi hits, wisata petik apel, Museum Angkut, Coban Rondo, dan sekitarnya.</div>
           <div class="trip-price">Mulai Rp 500.000 / hari</div>
           <button class="btn-detail">Lihat Pilihan Paket</button>
         </div>
@@ -179,11 +179,11 @@
         </div>
       </div>
 
-      <!-- 6. Shuttle Ranupane -->
+      <!-- 6. Shuttle Ranu Pani -->
       <div class="gallery-item">
         <img src="customer6.jpg" alt="Galeri Shuttle Ranupane">
         <div class="gallery-overlay">
-          <span class="trip-tag">Shuttle Ranupane</span>
+          <span class="trip-tag">Shuttle Ranu Pani</span>
         </div>
       </div>
     </div>
@@ -196,13 +196,13 @@
       <img id="modalImg" src="" alt="Paket Trip" class="modal-img">
       <h2 id="modalTitle">Judul Paket</h2>
       <p id="modalDesc" class="modal-desc">Deskripsi singkat paket trip.</p>
-      
+
    <!-- FORM PILIH TANGGAL KEBERANGKATAN -->
     <div class="date-picker-section" style="max-width: 500px; margin: 0 auto 30px auto;">
       <label for="tripDate"><i class="fas fa-calendar-alt"></i> Pilih Tanggal Keberangkatan Anda:</label>
       <input type="date" id="tripDate" class="date-input" onchange="updateWaLinks()" />
     </div>
-      
+
       <div class="sub-package-section">
         <h3>Pilih Varian Paket:</h3>
         <div id="modalSubPackages" class="sub-package-list"></div>
