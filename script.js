@@ -5,7 +5,7 @@ const waAdminNumber = "628563532918";
 const tripData = {
   "shuttle-ranupane": {
     title: "Private Shuttle Trip (Malang - Basecamp Ranu Pane PP)",
-    images: ["shuttle1.jpg", "shuttle2.jpg"],
+    images: ["gallery/shuttle1.jpg", "gallery/shuttle2.jpg"],
     desc: "Transportasi shuttle fleksibel Pergi-Pulang Malang ke Basecamp Ranu Pane. Free Fasilitas: Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air, & Dokumentasi.",
     subPackages: [
       { name: "Jimny Katana", detail: "Kapasitas 1-2 seats | Include: Transport, Driver, BBM, Parkir", price: "Rp 800.000" },
@@ -18,7 +18,7 @@ const tripData = {
   },
   "city-tour": {
     title: "City Tour Malang - Batu (Rent Car)",
-    images: ["citytour1.jpg", "citytour5.jpg", "citytour7.jpg", "citytour8.jpg"],
+    images: ["gallery/citytour1.jpg", "gallery/citytour5.jpg", "gallery/citytour7.jpg", "gallery/citytour8.jpg"],
     desc: "Sewa mobil + driver untuk keliling Malang & Batu. Include: Mobil, Driver, BBM, Welcome Snack/Drink, Powerbank, Wi-Fi. (Exclude: Tiket, Parkir, Tol, Konsumsi Driver).",
     subPackages: [
       { name: "Ignis / Agya / Ayla", detail: "Kapasitas 1-4 seats", price: "Rp 500.000 / hari" },
@@ -36,7 +36,7 @@ const tripData = {
   },
   "private-bromo": {
     title: "Private Trip Bromo",
-    images: ["bromo1.jpg", "bromo2.jpg", "bromo3.jpg", "bromo4.jpg"],
+    images: ["gallery/bromo1.jpg", "gallery/bromo2.jpg", "gallery/bromo3.jpg", "gallery/bromo4.jpg"],
     desc: "Eksplor 7 Destinasi Bromo (Sunrise, Lembah Widodaren, Pura Poten, Kawah, G. Batok, Pasir Berbisik, Savana). Mepo: Area Kota Malang. Max 5 orang/group.",
     subPackages: [
       { name: "Paket Ekonomis", detail: "Include: 7 Destinasi, Transport PP, Jeep, Tiket Masuk, Driver & BBM, Parkir, Dokumentasi, Welcome Snack/Drink, Powerbank", price: "Rp 1.800.000 / group" },
@@ -46,7 +46,7 @@ const tripData = {
   },
   "ranu-kumbolo": {
     title: "Private Trip Ranu Kumbolo",
-    images: ["rakum1.jpg", "rakum2.jpg"],
+    images: ["gallery/rakum1.jpg", "gallery/rakum2.jpg", "gallery/rakum3.jpg"],
     desc: "Pendakian Ranu Kumbolo (Durasi: 2 Hari 1 Malam). Bebas ribet war tiket SIMAKSI.",
     subPackages: [
       { name: "Paket Ekonomis (Min. 6 pax)", detail: "Include: Transport PP Malang-Ranu Pane, Simaksi, Asuransi TNBTS, Tour Leader, Dokumentasi, Porter Team, Tenda Big Adv, Matras, Kursi/Meja Lipat, Makan 5x, Fresh Fruits, P3K, Hand Warmer, Powerbank, Wi-Fi, Insta360 X4 / Gimbal", price: "Rp 1.400.000 / orang" },
@@ -59,7 +59,7 @@ const tripData = {
   },
   "tumpak-sewu": {
     title: "Private Trip Tumpak Sewu",
-    images: ["waterfall1.jpg", "waterfall2.jpg", "waterfall4.jpg"],
+    images: ["gallery/waterfall1.jpg", "gallery/waterfall2.jpg", "gallery/waterfall4.jpg"],
     desc: "Eksplorasi destinasi indah Tumpak Sewu (Panorama Tumpak Sewu, Goa Tetes, Dasar Air Terjun Tumpak, & Telaga Biru) + FREE Panorama Kapas Biru. Mepo: Area Kota Malang (Min. 3 orang).",
     subPackages: [
       { name: "Private Trip Tumpak Sewu (Min. 3 Pax)", detail: "Include: Transportasi PP Area Malang - Tumpak Sewu, Driver, BBM, Parkir, Tour Guide, Tiket Masuk, Dokumentasi Foto & Video (All File), Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air (+350k Add-On Photographer)", price: "Rp 400.000 / orang" }
@@ -67,7 +67,7 @@ const tripData = {
   },
   "ranu-regulo": {
     title: "Private Ranu Regulo Camping",
-    images: ["regulo1.jpg", "regulo2.jpg", "regulo3.jpg", "regulo4.jpg"],
+    images: ["gallery/regulo1.jpg", "gallery/regulo2.jpg", "gallery/regulo3.jpg", "gallery/regulo4.jpg"],
     desc: "Nikmati camping santai nan syahdu di tepi Danau Ranu Regulo.",
     subPackages: [
       { name: "Private Trip Ranu Regulo (Min. 4 Person)", detail: "Include: Tiket/Simaksi, Transport PP, Driver, BBM, Tenda (3-4 pax), Meja-Kursi Lipat, Alat Masak/Makan, Welcome Snack/Drink, Makan 2x, Buah Segar, P3K, Dokumentasi Team, Free Tripod, Gimbal, Hand Warmer. Fasilitas Unggulan: Full Powerbank, Free Wi-Fi, Camera Insta360 X4 Air, & Gimbal (Limited).", price: "Rp 400.000 / person" }
@@ -75,7 +75,7 @@ const tripData = {
   },
   "drop-juanda": {
     title: "Private Drop Off Juanda Airport",
-    images: ["juanda1.jpg", "juanda2.jpg"],
+    images: ["gallery/juanda1.jpg", "gallery/juanda2.jpg"],
     desc: "Perjalanan antar kota Malang - Surabaya / Juanda Airport. Layanan 24 jam. Price Include: Mobil, Driver, dan BBM (Harga not include parkir dan Tol). Drop kota Batu (ada fee charge) & Penjemputan Surabaya-Malang +fee 50k.",
     subPackages: [
       { name: "Car (Agya, Ayla, Brio, Sigra, Calya, Avanza, Xenia)", detail: "For 1-6 person | Price Include: Mobil, Driver, dan BBM", price: "Rp 550.000" },
@@ -198,16 +198,17 @@ function closeTripModal() {
 
 // 3. SLIDER HEADER & SLIDER KARTU DEPAN
 const headerImages = [ 
-  'bromo1.jpg', 
-  'rakum1.jpg',
-  'regulo4.jpg',
-  'citytour5.jpg',
-  'bromo4.jpg',
-  'bromo3.jpg',
-  'rakum2.jpg',
-  'waterfall2.jpg',
-  'regulo1.jpg',
-  'citytour3.jpg'
+  'gallery/bromo1.jpg', 
+  'gallery/rakum1.jpg',
+  'gallery/regulo4.jpg',
+  'gallery/citytour5.jpg',
+  'gallery/bromo4.jpg',
+  'gallery/bromo3.jpg',
+  'gallery/rakum2.jpg',
+  'gallery/waterfall2.jpg',
+  'gallery/regulo1.jpg',
+  'gallery/citytour3.jpg',
+  'gallery/rakum3.jpg'
 ];
 let headerIndex = 0;
 
@@ -292,7 +293,7 @@ function renderAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalBromoPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `Gbromo${i}.jpg`;
+    imgThumb.src = `gallery/Gbromo${i}.jpg`;
     imgThumb.alt = `Foto Bromo ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -340,7 +341,7 @@ function updateGalleryImage() {
   const counter = document.getElementById('galleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `Gbromo${currentBromoIndex}.jpg`;
+    lightboxImg.src = `gallery/Gbromo${currentBromoIndex}.jpg`;
     counter.innerText = `Foto ${currentBromoIndex} dari ${totalBromoPhotos}`;
   }
 }
@@ -363,7 +364,7 @@ function renderTumpakAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalTumpakPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `Gwaterfall${i}.jpg`;
+    imgThumb.src = `gallery/Gwaterfall${i}.jpg`;
     imgThumb.alt = `Foto Tumpak Sewu ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -411,12 +412,225 @@ function updateTumpakGalleryImage() {
   const counter = document.getElementById('tumpakGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `Gwaterfall${currentTumpakIndex}.jpg`;
+    lightboxImg.src = `gallery/Gwaterfall${currentTumpakIndex}.jpg`;
     counter.innerText = `Foto ${currentTumpakIndex} dari ${totalTumpakPhotos}`;
   }
 }
 
-// DOM LOADED INITS
+// 7. FITUR POPUP TATA LETAK ALBUM & LIGHTBOX 13 FOTO CITY TOUR (Gcitytour)
+let currentCityTourIndex = 1;
+const totalCityTourPhotos = 13;
+
+function openCityTourGallery() {
+  renderCityTourAlbumGrid();
+  showCityTourAlbumView();
+  const cityTourModal = document.getElementById('cityTourGalleryModal');
+  if (cityTourModal) cityTourModal.style.display = 'flex';
+}
+
+function renderCityTourAlbumGrid() {
+  const container = document.getElementById('cityTourAlbumGridContainer');
+  if (!container) return;
+
+  container.innerHTML = '';
+  for (let i = 1; i <= totalCityTourPhotos; i++) {
+    const imgThumb = document.createElement('img');
+    imgThumb.src = `gallery/Gcitytour${i}.jpg`;
+    imgThumb.alt = `Foto City Tour ${i}`;
+    imgThumb.className = 'album-thumb-item';
+    imgThumb.onclick = function() {
+      openCityTourSinglePhoto(i);
+    };
+    container.appendChild(imgThumb);
+  }
+}
+
+function showCityTourAlbumView() {
+  const albumView = document.getElementById('cityTourAlbumView');
+  const singleView = document.getElementById('cityTourSingleView');
+  if (albumView) albumView.style.display = 'block';
+  if (singleView) singleView.style.display = 'none';
+}
+
+function openCityTourSinglePhoto(index) {
+  currentCityTourIndex = index;
+  updateCityTourGalleryImage();
+  const albumView = document.getElementById('cityTourAlbumView');
+  const singleView = document.getElementById('cityTourSingleView');
+  if (albumView) albumView.style.display = 'none';
+  if (singleView) singleView.style.display = 'block';
+}
+
+function closeCityTourGalleryModal() {
+  const cityTourModal = document.getElementById('cityTourGalleryModal');
+  if (cityTourModal) cityTourModal.style.display = 'none';
+}
+
+function changeCityTourGalleryImg(direction) {
+  currentCityTourIndex += direction;
+  
+  if (currentCityTourIndex > totalCityTourPhotos) {
+    currentCityTourIndex = 1;
+  } else if (currentCityTourIndex < 1) {
+    currentCityTourIndex = totalCityTourPhotos;
+  }
+  
+  updateCityTourGalleryImage();
+}
+
+function updateCityTourGalleryImage() {
+  const lightboxImg = document.getElementById('cityTourLightboxImg');
+  const counter = document.getElementById('cityTourGalleryCounter');
+  
+  if (lightboxImg && counter) {
+    lightboxImg.src = `gallery/Gcitytour${currentCityTourIndex}.jpg`;
+    counter.innerText = `Foto ${currentCityTourIndex} dari ${totalCityTourPhotos}`;
+  }
+}
+
+// 8. FITUR POPUP ALBUM & LIGHTBOX SHUTTLE RANUPANE (34 FOTO)
+let currentShuttleIndex = 1;
+const totalShuttlePhotos = 34;
+
+function openShuttleGallery() {
+  renderShuttleAlbumGrid();
+  showShuttleAlbumView();
+  const shuttleModal = document.getElementById('shuttleGalleryModal');
+  if (shuttleModal) shuttleModal.style.display = 'flex';
+}
+
+function renderShuttleAlbumGrid() {
+  const container = document.getElementById('shuttleAlbumGridContainer');
+  if (!container) return;
+
+  container.innerHTML = '';
+  for (let i = 1; i <= totalShuttlePhotos; i++) {
+    const imgThumb = document.createElement('img');
+    imgThumb.src = `gallery/Gshuttle${i}.jpg`;
+    imgThumb.alt = `Foto Shuttle ${i}`;
+    imgThumb.className = 'album-thumb-item';
+    imgThumb.onclick = function() {
+      openShuttleSinglePhoto(i);
+    };
+    container.appendChild(imgThumb);
+  }
+}
+
+function showShuttleAlbumView() {
+  const albumView = document.getElementById('shuttleAlbumView');
+  const singleView = document.getElementById('shuttleSingleView');
+  if (albumView) albumView.style.display = 'block';
+  if (singleView) singleView.style.display = 'none';
+}
+
+function openShuttleSinglePhoto(index) {
+  currentShuttleIndex = index;
+  updateShuttleGalleryImage();
+  const albumView = document.getElementById('shuttleAlbumView');
+  const singleView = document.getElementById('shuttleSingleView');
+  if (albumView) albumView.style.display = 'none';
+  if (singleView) singleView.style.display = 'block';
+}
+
+function closeShuttleGalleryModal() {
+  const shuttleModal = document.getElementById('shuttleGalleryModal');
+  if (shuttleModal) shuttleModal.style.display = 'none';
+}
+
+function changeShuttleGalleryImg(direction) {
+  currentShuttleIndex += direction;
+  
+  if (currentShuttleIndex > totalShuttlePhotos) {
+    currentShuttleIndex = 1;
+  } else if (currentShuttleIndex < 1) {
+    currentShuttleIndex = totalShuttlePhotos;
+  }
+  
+  updateShuttleGalleryImage();
+}
+
+function updateShuttleGalleryImage() {
+  const lightboxImg = document.getElementById('shuttleLightboxImg');
+  const counter = document.getElementById('shuttleGalleryCounter');
+  
+  if (lightboxImg && counter) {
+    lightboxImg.src = `gallery/Gshuttle${currentShuttleIndex}.jpg`;
+    counter.innerText = `Foto ${currentShuttleIndex} dari ${totalShuttlePhotos}`;
+  }
+}
+
+// FITUR POPUP TATA LETAK ALBUM & LIGHTBOX 47 FOTO RANU KUMBOLO (Grakum)
+let currentRakumIndex = 1;
+const totalRakumPhotos = 47;
+
+function openRakumGallery() {
+  renderRakumAlbumGrid();
+  showRakumAlbumView();
+  const rakumModal = document.getElementById('rakumGalleryModal');
+  if (rakumModal) rakumModal.style.display = 'flex';
+}
+
+function renderRakumAlbumGrid() {
+  const container = document.getElementById('rakumAlbumGridContainer');
+  if (!container) return;
+
+  container.innerHTML = '';
+  for (let i = 1; i <= totalRakumPhotos; i++) {
+    const imgThumb = document.createElement('img');
+    imgThumb.src = `gallery/Grakum${i}.jpg`;
+    imgThumb.alt = `Foto Ranu Kumbolo ${i}`;
+    imgThumb.className = 'album-thumb-item';
+    imgThumb.onclick = function() {
+      openRakumSinglePhoto(i);
+    };
+    container.appendChild(imgThumb);
+  }
+}
+
+function showRakumAlbumView() {
+  const albumView = document.getElementById('rakumAlbumView');
+  const singleView = document.getElementById('rakumSingleView');
+  if (albumView) albumView.style.display = 'block';
+  if (singleView) singleView.style.display = 'none';
+}
+
+function openRakumSinglePhoto(index) {
+  currentRakumIndex = index;
+  updateRakumGalleryImage();
+  const albumView = document.getElementById('rakumAlbumView');
+  const singleView = document.getElementById('rakumSingleView');
+  if (albumView) albumView.style.display = 'none';
+  if (singleView) singleView.style.display = 'block';
+}
+
+function closeRakumGalleryModal() {
+  const rakumModal = document.getElementById('rakumGalleryModal');
+  if (rakumModal) rakumModal.style.display = 'none';
+}
+
+function changeRakumGalleryImg(direction) {
+  currentRakumIndex += direction;
+  
+  if (currentRakumIndex > totalRakumPhotos) {
+    currentRakumIndex = 1;
+  } else if (currentRakumIndex < 1) {
+    currentRakumIndex = totalRakumPhotos;
+  }
+  
+  updateRakumGalleryImage();
+}
+
+function updateRakumGalleryImage() {
+  const lightboxImg = document.getElementById('rakumLightboxImg');
+  const counter = document.getElementById('rakumGalleryCounter');
+  
+  if (lightboxImg && counter) {
+    lightboxImg.src = `gallery/Grakum${currentRakumIndex}.jpg`;
+    counter.innerText = `Foto ${currentRakumIndex} dari ${totalRakumPhotos}`;
+  }
+}
+
+// DOM LOADED INITS (SLIDESHOW SAMPUL GALERI SERENTAK)
 document.addEventListener('DOMContentLoaded', () => {
   startHeaderSlider();
   startCardImageSlider();
@@ -430,25 +644,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Slideshow Sampul Kartu Bromo di Galeri Utama (Gbromo1.jpg - Gbromo31.jpg)
-  let bromoIndex = 1;
-  const bromoImgElement = document.getElementById('bromoGalleryImg');
-  if (bromoImgElement) {
-    setInterval(() => {
-      bromoIndex = (bromoIndex % 31) + 1;
-      bromoImgElement.src = `Gbromo${bromoIndex}.jpg`;
-    }, 3000);
-  }
+  let gallerySlideIndex = 1;
 
-  // Slideshow Sampul Kartu Tumpak Sewu di Galeri Utama (Gwaterfall1.jpg - Gwaterfall41.jpg)
-  let tumpakIndex = 1;
-  const tumpakImgElement = document.getElementById('tumpakGalleryImg');
-  if (tumpakImgElement) {
-    setInterval(() => {
-      tumpakIndex = (tumpakIndex % 41) + 1;
-      tumpakImgElement.src = `Gwaterfall${tumpakIndex}.jpg`;
-    }, 3000);
-  }
+  setInterval(() => {
+    gallerySlideIndex++;
+
+    // 1. Sampul Bromo
+    const bromoImg = document.getElementById('bromoGalleryImg');
+    if (bromoImg) {
+      const currentBromo = ((gallerySlideIndex - 1) % 31) + 1;
+      bromoImg.src = `gallery/Gbromo${currentBromo}.jpg`;
+    }
+
+    // 2. Sampul Tumpak Sewu
+    const tumpakImg = document.getElementById('tumpakGalleryImg');
+    if (tumpakImg) {
+      const currentTumpak = ((gallerySlideIndex - 1) % 41) + 1;
+      tumpakImg.src = `gallery/Gwaterfall${currentTumpak}.jpg`;
+    }
+
+    // 3. Sampul City Tour
+    const cityTourImg = document.getElementById('cityTourGalleryImg');
+    if (cityTourImg) {
+      const currentCityTour = ((gallerySlideIndex - 1) % 13) + 1;
+      cityTourImg.src = `gallery/Gcitytour${currentCityTour}.jpg`;
+    }
+
+    // 4. Sampul Shuttle Ranupane
+    const shuttleImg = document.getElementById('shuttleGalleryImg');
+    if (shuttleImg) {
+      const currentShuttle = ((gallerySlideIndex - 1) % 34) + 1;
+      shuttleImg.src = `gallery/Gshuttle${currentShuttle}.jpg`;
+    }
+
+    // 5. Sampul Ranu Kumbolo
+    const rakumImg = document.getElementById('rakumGalleryImg');
+    if (rakumImg) {
+      const currentRakum = ((gallerySlideIndex - 1) % 47) + 1;
+      rakumImg.src = `gallery/Grakum${currentRakum}.jpg`;
+    }
+
+  }, 3000);
 });
 
 // TUTUP MODAL JIKA KLIK AREA LUAR
@@ -456,15 +692,14 @@ window.addEventListener('click', function(event) {
   const tripModal = document.getElementById('tripModal');
   const galleryModal = document.getElementById('galleryModal');
   const tumpakModal = document.getElementById('tumpakGalleryModal');
+  const cityTourModal = document.getElementById('cityTourGalleryModal');
+  const shuttleModal = document.getElementById('shuttleGalleryModal');
+  const rakumModal = document.getElementById('rakumGalleryModal');
 
-  if (event.target === tripModal) {
-    closeTripModal();
-  }
-  if (event.target === galleryModal) {
-    closeGalleryModal();
-  }
-  if (event.target === tumpakModal) {
-    closeTumpakGalleryModal();
-  }
+  if (event.target === tripModal) closeTripModal();
+  if (event.target === galleryModal) closeGalleryModal();
+  if (event.target === tumpakModal) closeTumpakGalleryModal();
+  if (event.target === cityTourModal) closeCityTourGalleryModal();
+  if (event.target === shuttleModal) closeShuttleGalleryModal();
+  if (event.target === rakumModal) closerakumGalleryModal();
 });
-
