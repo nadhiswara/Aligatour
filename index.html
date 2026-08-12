@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aligatour and Travel - Perjalanan Wisata Terbaik Anda</title>
 
-  <!-- Google Fonts: Montserrat (Judul Utama) & Poppins (Teks Isi) -->
+  <!-- Google Fonts: Montserrat & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +21,13 @@
   <!-- HERO HEADER -->
   <header>
     <!-- LOGO POJOK KIRI ATAS -->
-    <img src="gallery/logo.jpg" alt="Logo Aligatour" class="header-logo" />
+    <a href="index.html">
+      <img src="gallery/logo.jpg" alt="Logo Aligatour" class="header-logo" />
+    </a>
 
-    <!-- NAVIGASI DI HALAMAN UTAMA (HANYA TENTANG KAMI) -->
+    <!-- NAVIGASI DI HALAMAN UTAMA -->
     <nav class="main-nav">
-      <a href="about us.html" class="nav-link">Tentang Kami</a>
+      <a href="about.html" class="nav-link">Tentang Kami</a>
     </nav>
 
     <h1>ALIGATOUR AND TRAVEL</h1>
@@ -149,7 +151,7 @@
     </div>
 
     <div class="gallery-grid">
-      <!-- 1. Customer Bromo (Album 31 Foto) -->
+      <!-- 1. Customer Bromo -->
       <div class="gallery-item" onclick="openBromoGallery()">
         <img src="gallery/Gbromo1.jpg" id="bromoGalleryImg" alt="Galeri Bromo">
         <div class="gallery-overlay">
@@ -157,7 +159,7 @@
         </div>
       </div>
 
-      <!-- 2. Customer Tumpak Sewu (Album 41 Foto Gwaterfall) -->
+      <!-- 2. Customer Tumpak Sewu -->
       <div class="gallery-item" onclick="openTumpakGallery()">
         <img src="gallery/Gwaterfall1.jpg" id="tumpakGalleryImg" alt="Galeri Tumpak Sewu">
         <div class="gallery-overlay">
@@ -210,7 +212,7 @@
       <!-- FORM PILIH TANGGAL KEBERANGKATAN -->
       <div class="date-picker-section" style="max-width: 500px; margin: 0 auto 30px auto;">
         <label for="tripDate"><i class="fas fa-calendar-alt"></i> Pilih Tanggal Keberangkatan Anda:</label>
-        <input type="date" id="tripDate" class="date-input" onchange="updateWaLinks()" />
+        <input type="date" id="tripDate" class="date-input" min="2026-08-12" onchange="updateWaLinks()" />
       </div>
 
       <div class="sub-package-section">
@@ -220,19 +222,15 @@
     </div>
   </div>
 
-  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI BROMO (31 FOTO) -->
+  <!-- POP-UP ALBUM BROMO -->
   <div id="galleryModal" class="modal" style="display:none;">
     <div class="modal-content gallery-modal-content">
       <span class="close-btn" onclick="closeGalleryModal()">&times;</span>
-      
-      <!-- TAMPILAN GRID ALBUM BROMO -->
       <div id="galleryAlbumView">
         <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Bromo (31 Foto)</h3>
         <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
         <div id="albumGridContainer" class="album-grid"></div>
       </div>
-
-      <!-- TAMPILAN PREVIEW LAYAR PENUH BROMO -->
       <div id="gallerySingleView" style="display: none;">
         <div class="lightbox-top-bar">
           <button class="btn-back-album" onclick="showAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
@@ -244,23 +242,18 @@
         </div>
         <div id="galleryCounter" class="gallery-counter">Foto 1 dari 31</div>
       </div>
-
     </div>
   </div>
 
-  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI TUMPAK SEWU (41 FOTO) -->
+  <!-- POP-UP ALBUM TUMPAK SEWU -->
   <div id="tumpakGalleryModal" class="modal" style="display:none;">
     <div class="modal-content gallery-modal-content">
       <span class="close-btn" onclick="closeTumpakGalleryModal()">&times;</span>
-      
-      <!-- TAMPILAN GRID ALBUM TUMPAK SEWU -->
       <div id="tumpakAlbumView">
         <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Tumpak Sewu (41 Foto)</h3>
         <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
         <div id="tumpakAlbumGridContainer" class="album-grid"></div>
       </div>
-
-      <!-- TAMPILAN PREVIEW LAYAR PENUH TUMPAK SEWU -->
       <div id="tumpakSingleView" style="display: none;">
         <div class="lightbox-top-bar">
           <button class="btn-back-album" onclick="showTumpakAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
@@ -272,23 +265,18 @@
         </div>
         <div id="tumpakGalleryCounter" class="gallery-counter">Foto 1 dari 41</div>
       </div>
-
     </div>
   </div>
 
-  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI CITY TOUR (13 FOTO) -->
+  <!-- POP-UP ALBUM CITY TOUR -->
   <div id="cityTourGalleryModal" class="modal" style="display:none;">
     <div class="modal-content gallery-modal-content">
       <span class="close-btn" onclick="closeCityTourGalleryModal()">&times;</span>
-      
-      <!-- TAMPILAN GRID ALBUM CITY TOUR -->
       <div id="cityTourAlbumView">
         <h3 class="album-title"><i class="fas fa-images"></i> Album Foto City Tour Malang - Batu (13 Foto)</h3>
         <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
         <div id="cityTourAlbumGridContainer" class="album-grid"></div>
       </div>
-
-      <!-- TAMPILAN PREVIEW LAYAR PENUH CITY TOUR -->
       <div id="cityTourSingleView" style="display: none;">
         <div class="lightbox-top-bar">
           <button class="btn-back-album" onclick="showCityTourAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
@@ -300,23 +288,18 @@
         </div>
         <div id="cityTourGalleryCounter" class="gallery-counter">Foto 1 dari 13</div>
       </div>
-
     </div>
   </div>
 
-  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI SHUTTLE RANUPANE (34 FOTO) -->
+  <!-- POP-UP ALBUM SHUTTLE RANUPANI -->
   <div id="shuttleGalleryModal" class="modal" style="display:none;">
     <div class="modal-content gallery-modal-content">
       <span class="close-btn" onclick="closeShuttleGalleryModal()">&times;</span>
-      
-      <!-- TAMPILAN GRID ALBUM SHUTTLE -->
       <div id="shuttleAlbumView">
         <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Shuttle Ranupani (34 Foto)</h3>
         <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
         <div id="shuttleAlbumGridContainer" class="album-grid"></div>
       </div>
-
-      <!-- TAMPILAN PREVIEW LAYAR PENUH SHUTTLE -->
       <div id="shuttleSingleView" style="display: none;">
         <div class="lightbox-top-bar">
           <button class="btn-back-album" onclick="showShuttleAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
@@ -328,37 +311,31 @@
         </div>
         <div id="shuttleGalleryCounter" class="gallery-counter">Foto 1 dari 34</div>
       </div>
-
     </div>
   </div>
 
-  <!-- POP-UP LIGHTBOX & GRID ALBUM GALERI RANU KUMBOLO (47 FOTO) -->
-<div id="rakumGalleryModal" class="modal" style="display:none;">
-  <div class="modal-content gallery-modal-content">
-    <span class="close-btn" onclick="closeRakumGalleryModal()">&times;</span>
-    
-    <!-- TAMPILAN GRID ALBUM RANU KUMBOLO -->
-    <div id="rakumAlbumView">
-      <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Ranu Kumbolo (47 Foto)</h3>
-      <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
-      <div id="rakumAlbumGridContainer" class="album-grid"></div>
-    </div>
-
-    <!-- TAMPILAN PREVIEW LAYAR PENUH RANU KUMBOLO -->
-    <div id="rakumSingleView" style="display: none;">
-      <div class="lightbox-top-bar">
-        <button class="btn-back-album" onclick="showRakumAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
+  <!-- POP-UP ALBUM RANU KUMBOLO -->
+  <div id="rakumGalleryModal" class="modal" style="display:none;">
+    <div class="modal-content gallery-modal-content">
+      <span class="close-btn" onclick="closeRakumGalleryModal()">&times;</span>
+      <div id="rakumAlbumView">
+        <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Ranu Kumbolo (47 Foto)</h3>
+        <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
+        <div id="rakumAlbumGridContainer" class="album-grid"></div>
       </div>
-      <div class="lightbox-container">
-        <button class="nav-btn prev-btn" onclick="changeRakumGalleryImg(-1)"><i class="fas fa-chevron-left"></i></button>
-        <img id="rakumLightboxImg" src="gallery/Grakum1.jpg" alt="Galeri Ranu Kumbolo" />
-        <button class="nav-btn next-btn" onclick="changeRakumGalleryImg(1)"><i class="fas fa-chevron-right"></i></button>
+      <div id="rakumSingleView" style="display: none;">
+        <div class="lightbox-top-bar">
+          <button class="btn-back-album" onclick="showRakumAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
+        </div>
+        <div class="lightbox-container">
+          <button class="nav-btn prev-btn" onclick="changeRakumGalleryImg(-1)"><i class="fas fa-chevron-left"></i></button>
+          <img id="rakumLightboxImg" src="gallery/Grakum1.jpg" alt="Galeri Ranu Kumbolo" />
+          <button class="nav-btn next-btn" onclick="changeRakumGalleryImg(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div id="rakumGalleryCounter" class="gallery-counter">Foto 1 dari 47</div>
       </div>
-      <div id="rakumGalleryCounter" class="gallery-counter">Foto 1 dari 47</div>
     </div>
-
   </div>
-</div>
 
   <!-- FOOTER -->
   <footer>
