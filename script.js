@@ -630,6 +630,77 @@ function updateRakumGalleryImage() {
   }
 }
 
+// FITUR POPUP TATA LETAK ALBUM & LIGHTBOX 60 FOTO RANU REGULO (Gregulo)
+let currentReguloIndex = 1;
+const totalReguloPhotos = 60;
+
+function openReguloGallery() {
+  renderReguloAlbumGrid();
+  showReguloAlbumView();
+  const reguloModal = document.getElementById('reguloGalleryModal');
+  if (reguloModal) reguloModal.style.display = 'flex';
+}
+
+function renderReguloAlbumGrid() {
+  const container = document.getElementById('reguloAlbumGridContainer');
+  if (!container) return;
+
+  container.innerHTML = '';
+  for (let i = 1; i <= totalReguloPhotos; i++) {
+    const imgThumb = document.createElement('img');
+    imgThumb.src = `gallery/Gregulo${i}.jpg`;
+    imgThumb.alt = `Foto Ranu Regulo ${i}`;
+    imgThumb.className = 'album-thumb-item';
+    imgThumb.onclick = function() {
+      openReguloSinglePhoto(i);
+    };
+    container.appendChild(imgThumb);
+  }
+}
+
+function showReguloAlbumView() {
+  const albumView = document.getElementById('reguloAlbumView');
+  const singleView = document.getElementById('reguloSingleView');
+  if (albumView) albumView.style.display = 'block';
+  if (singleView) singleView.style.display = 'none';
+}
+
+function openReguloSinglePhoto(index) {
+  currentReguloIndex = index;
+  updateReguloGalleryImage();
+  const albumView = document.getElementById('reguloAlbumView');
+  const singleView = document.getElementById('reguloSingleView');
+  if (albumView) albumView.style.display = 'none';
+  if (singleView) singleView.style.display = 'block';
+}
+
+function closeReguloGalleryModal() {
+  const reguloModal = document.getElementById('reguloGalleryModal');
+  if (reguloModal) reguloModal.style.display = 'none';
+}
+
+function changeReguloGalleryImg(direction) {
+  currentReguloIndex += direction;
+  
+  if (currentReguloIndex > totalReguloPhotos) {
+    currentReguloIndex = 1;
+  } else if (currentReguloIndex < 1) {
+    currentReguloIndex = totalReguloPhotos;
+  }
+  
+  updateReguloGalleryImage();
+}
+
+function updateReguloGalleryImage() {
+  const lightboxImg = document.getElementById('reguloLightboxImg');
+  const counter = document.getElementById('reguloGalleryCounter');
+  
+  if (lightboxImg && counter) {
+    lightboxImg.src = `gallery/Gregulo${currentReguloIndex}.jpg`;
+    counter.innerText = `Foto ${currentReguloIndex} dari ${totalReguloPhotos}`;
+  }
+}
+
 // DOM LOADED INITS (SLIDESHOW SAMPUL GALERI SERENTAK)
 document.addEventListener('DOMContentLoaded', () => {
   startHeaderSlider();
@@ -684,6 +755,13 @@ document.addEventListener('DOMContentLoaded', () => {
       rakumImg.src = `gallery/Grakum${currentRakum}.jpg`;
     }
 
+    // 6. Sampul Ranu Regulo
+    const reguloImg = document.getElementById('reguloGalleryImg');
+    if (reguloImg) {
+      const currentRegulo = ((gallerySlideIndex - 1) % 60) + 1;
+      reguloImg.src = `gallery/Gregulo${currentRegulo}.jpg`;
+  }
+
   }, 3000);
 });
 
@@ -695,11 +773,13 @@ window.addEventListener('click', function(event) {
   const cityTourModal = document.getElementById('cityTourGalleryModal');
   const shuttleModal = document.getElementById('shuttleGalleryModal');
   const rakumModal = document.getElementById('rakumGalleryModal');
+  const reguloModal = document.getElementById('reguloGalleryModal');
 
   if (event.target === tripModal) closeTripModal();
   if (event.target === galleryModal) closeGalleryModal();
   if (event.target === tumpakModal) closeTumpakGalleryModal();
   if (event.target === cityTourModal) closeCityTourGalleryModal();
   if (event.target === shuttleModal) closeShuttleGalleryModal();
-  if (event.target === rakumModal) closerakumGalleryModal();
+  if (event.target === rakumModal) closeRakumGalleryModal();
+  if (event.target === reguloModal) closeReguloGalleryModal();
 });

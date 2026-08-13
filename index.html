@@ -184,10 +184,10 @@
       </div>
 
       <!-- 5. Camping Ranu Regulo -->
-      <div class="gallery-item">
-        <img src="gallery/customer5.jpg" alt="Galeri Ranu Regulo">
+      <div class="gallery-item" onclick="openReguloGallery()">
+        <img src="gallery/Gregulo1.jpg" id="reguloGalleryImg" alt="Galeri Ranu Regulo">
         <div class="gallery-overlay">
-          <span class="trip-tag">Camping Ranu Regulo</span>
+          <span class="trip-tag"><i class="fas fa-th"></i> Album Ranu Regulo (60 Foto)</span>
         </div>
       </div>
 
@@ -336,6 +336,34 @@
       </div>
     </div>
   </div>
+
+  <!-- POP-UP ALBUM RANU REGULO -->
+  <div id="reguloGalleryModal" class="modal" style="display:none;">
+  <div class="modal-content gallery-modal-content">
+    <span class="close-btn" onclick="closeReguloGalleryModal()">&times;</span>
+    
+    <!-- TAMPILAN GRID ALBUM RANU REGULO -->
+    <div id="reguloAlbumView">
+      <h3 class="album-title"><i class="fas fa-images"></i> Album Foto Trip Ranu Regulo (60 Foto)</h3>
+      <p class="album-subtitle">Klik salah satu foto di bawah untuk memperbesar</p>
+      <div id="reguloAlbumGridContainer" class="album-grid"></div>
+    </div>
+
+    <!-- TAMPILAN PREVIEW LAYAR PENUH RANU REGULO -->
+    <div id="reguloSingleView" style="display: none;">
+      <div class="lightbox-top-bar">
+        <button class="btn-back-album" onclick="showReguloAlbumView()"><i class="fas fa-arrow-left"></i> Kembali ke Album</button>
+      </div>
+      <div class="lightbox-container">
+        <button class="nav-btn prev-btn" onclick="changeReguloGalleryImg(-1)"><i class="fas fa-chevron-left"></i></button>
+        <img id="reguloLightboxImg" src="gallery/Gregulo1.jpg" alt="Galeri Ranu Regulo" />
+        <button class="nav-btn next-btn" onclick="changeReguloGalleryImg(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div id="reguloGalleryCounter" class="gallery-counter">Foto 1 dari 60</div>
+    </div>
+
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
