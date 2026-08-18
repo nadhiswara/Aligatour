@@ -5,7 +5,7 @@ const waAdminNumber = "628563532918";
 const tripData = {
   "shuttle-ranupani": {
     title: "Private Shuttle Trip (Malang - Basecamp Ranu Pani PP)",
-    images: ["gallery/shuttle1.jpg", "gallery/shuttle2.jpg"],
+    images: ["gallery/shuttle1.webp", "gallery/shuttle2.webp"],
     desc: "Transportasi shuttle fleksibel Pergi-Pulang Malang ke Basecamp Ranu Pani. Free Fasilitas: Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air, & Dokumentasi.",
     subPackages: [
       { name: "Jimny Katana", detail: "Kapasitas 1-2 seats | Include: Transport, Driver, BBM, Parkir", price: "Rp 800.000" },
@@ -18,7 +18,7 @@ const tripData = {
   },
   "city-tour": {
     title: "City Tour Malang - Batu (Rent Car)",
-    images: ["gallery/citytour1.jpg", "gallery/citytour5.jpg", "gallery/citytour7.jpg", "gallery/citytour8.jpg"],
+    images: ["gallery/citytour1.webp", "gallery/citytour5.webp", "gallery/citytour7.webp", "gallery/citytour8.webp"],
     desc: "Sewa mobil + driver untuk keliling Malang & Batu. Include: Mobil, Driver, BBM, Welcome Snack/Drink, Powerbank, Wi-Fi. (Exclude: Tiket, Parkir, Tol, Konsumsi Driver).",
     subPackages: [
       { name: "Ignis / Agya / Ayla", detail: "Kapasitas 1-4 seats", price: "Rp 500.000 / hari" },
@@ -36,7 +36,7 @@ const tripData = {
   },
   "private-bromo": {
     title: "Private Trip Bromo",
-    images: ["gallery/bromo1.jpg", "gallery/bromo2.jpg", "gallery/bromo3.jpg", "gallery/bromo4.jpg"],
+    images: ["gallery/bromo1.webp", "gallery/bromo2.webp", "gallery/bromo3.webp", "gallery/bromo4.webp"],
     desc: "Eksplor 7 Destinasi Bromo (Sunrise, Lembah Widodaren, Pura Poten, Kawah, G. Batok, Pasir Berbisik, Savana). Mepo: Area Kota Malang. Max 5 orang/group.",
     subPackages: [
       { name: "Paket Ekonomis", detail: "Include: 7 Destinasi, Transport PP, Jeep, Tiket Masuk, Driver & BBM, Parkir, Dokumentasi, Welcome Snack/Drink, Powerbank", price: "Rp 1.800.000 / group" },
@@ -46,7 +46,7 @@ const tripData = {
   },
   "ranu-kumbolo": {
     title: "Private Trip Ranu Kumbolo",
-    images: ["gallery/rakum1.jpg", "gallery/rakum2.jpg", "gallery/rakum3.jpg"],
+    images: ["gallery/rakum1.webp", "gallery/rakum2.webp", "gallery/rakum3.webp"],
     desc: "Pendakian Ranu Kumbolo (Durasi: 2 Hari 1 Malam). Bebas ribet war tiket SIMAKSI.",
     subPackages: [
       { name: "Paket Ekonomis (Min. 6 pax)", detail: "Include: Transport PP Malang-Ranu Pane, Simaksi, Asuransi TNBTS, Tour Leader, Dokumentasi, Porter Team, Tenda Big Adv, Matras, Kursi/Meja Lipat, Makan 5x, Fresh Fruits, P3K, Hand Warmer, Powerbank, Wi-Fi, Insta360 X4 / Gimbal", price: "Rp 1.400.000 / orang" },
@@ -59,7 +59,7 @@ const tripData = {
   },
   "tumpak-sewu": {
     title: "Private Trip Tumpak Sewu",
-    images: ["gallery/waterfall1.jpg", "gallery/waterfall2.jpg", "gallery/waterfall4.jpg"],
+    images: ["gallery/waterfall1.webp", "gallery/waterfall2.webp", "gallery/waterfall4.webp"],
     desc: "Eksplorasi destinasi indah Tumpak Sewu (Panorama Tumpak Sewu, Goa Tetes, Dasar Air Terjun Tumpak, & Telaga Biru) + FREE Panorama Kapas Biru. Mepo: Area Kota Malang (Min. 3 orang).",
     subPackages: [
       { name: "Private Trip Tumpak Sewu (Min. 3 Pax)", detail: "Include: Transportasi PP Area Malang - Tumpak Sewu, Driver, BBM, Parkir, Tour Guide, Tiket Masuk, Dokumentasi Foto & Video (All File), Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air (+350k Add-On Photographer)", price: "Rp 400.000 / orang" }
@@ -67,7 +67,7 @@ const tripData = {
   },
   "ranu-regulo": {
     title: "Private Ranu Regulo Camping",
-    images: ["gallery/regulo1.jpg", "gallery/regulo2.jpg", "gallery/regulo3.jpg", "gallery/regulo4.jpg"],
+    images: ["gallery/regulo1.webp", "gallery/regulo2.webp", "gallery/regulo3.webp", "gallery/regulo4.webp"],
     desc: "Nikmati camping santai nan syahdu di tepi Danau Ranu Regulo.",
     subPackages: [
       { name: "Private Trip Ranu Regulo (Min. 4 Person)", detail: "Include: Tiket/Simaksi, Transport PP, Driver, BBM, Tenda (3-4 pax), Meja-Kursi Lipat, Alat Masak/Makan, Welcome Snack/Drink, Makan 2x, Buah Segar, P3K, Dokumentasi Team, Free Tripod, Gimbal, Hand Warmer. Fasilitas Unggulan: Full Powerbank, Free Wi-Fi, Camera Insta360 X4 Air, & Gimbal (Limited).", price: "Rp 400.000 / person" }
@@ -75,7 +75,7 @@ const tripData = {
   },
   "drop-juanda": {
     title: "Private Drop Off Juanda Airport",
-    images: ["gallery/juanda1.jpg", "gallery/juanda2.jpg"],
+    images: ["gallery/juanda1.webp", "gallery/juanda2.webp"],
     desc: "Perjalanan antar kota Malang - Surabaya / Juanda Airport. Layanan 24 jam. Price Include: Mobil, Driver, dan BBM (Harga not include parkir dan Tol). Drop kota Batu (ada fee charge) & Penjemputan Surabaya-Malang +fee 50k.",
     subPackages: [
       { name: "Car (Agya, Ayla, Brio, Sigra, Calya, Avanza, Xenia)", detail: "For 1-6 person | Price Include: Mobil, Driver, dan BBM", price: "Rp 550.000" },
@@ -198,17 +198,17 @@ function closeTripModal() {
 
 // 3. SLIDER HEADER & SLIDER KARTU DEPAN
 const headerImages = [ 
-  'gallery/bromo1.jpg', 
-  'gallery/rakum1.jpg',
-  'gallery/regulo4.jpg',
-  'gallery/citytour5.jpg',
-  'gallery/bromo4.jpg',
-  'gallery/bromo3.jpg',
-  'gallery/rakum2.jpg',
-  'gallery/waterfall2.jpg',
-  'gallery/regulo1.jpg',
-  'gallery/citytour3.jpg',
-  'gallery/rakum3.jpg'
+  'gallery/bromo1.webp', 
+  'gallery/rakum1.webp',
+  'gallery/regulo4.webp',
+  'gallery/citytour5.webp',
+  'gallery/bromo4.webp',
+  'gallery/bromo3.webp',
+  'gallery/rakum2.webp',
+  'gallery/waterfall2.webp',
+  'gallery/regulo1.webp',
+  'gallery/citytour3.webp',
+  'gallery/rakum3.webp'
 ];
 let headerIndex = 0;
 
@@ -293,7 +293,7 @@ function renderAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalBromoPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Gbromo${i}.jpg`;
+    imgThumb.src = `gallery/Gbromo${i}.webp`;
     imgThumb.alt = `Foto Bromo ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -341,7 +341,7 @@ function updateGalleryImage() {
   const counter = document.getElementById('galleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Gbromo${currentBromoIndex}.jpg`;
+    lightboxImg.src = `gallery/Gbromo${currentBromoIndex}.webp`;
     counter.innerText = `Foto ${currentBromoIndex} dari ${totalBromoPhotos}`;
   }
 }
@@ -364,7 +364,7 @@ function renderTumpakAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalTumpakPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Gwaterfall${i}.jpg`;
+    imgThumb.src = `gallery/Gwaterfall${i}.webp`;
     imgThumb.alt = `Foto Tumpak Sewu ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -412,7 +412,7 @@ function updateTumpakGalleryImage() {
   const counter = document.getElementById('tumpakGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Gwaterfall${currentTumpakIndex}.jpg`;
+    lightboxImg.src = `gallery/Gwaterfall${currentTumpakIndex}.webp`;
     counter.innerText = `Foto ${currentTumpakIndex} dari ${totalTumpakPhotos}`;
   }
 }
@@ -435,7 +435,7 @@ function renderCityTourAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalCityTourPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Gcitytour${i}.jpg`;
+    imgThumb.src = `gallery/Gcitytour${i}.webp`;
     imgThumb.alt = `Foto City Tour ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -483,7 +483,7 @@ function updateCityTourGalleryImage() {
   const counter = document.getElementById('cityTourGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Gcitytour${currentCityTourIndex}.jpg`;
+    lightboxImg.src = `gallery/Gcitytour${currentCityTourIndex}.webp`;
     counter.innerText = `Foto ${currentCityTourIndex} dari ${totalCityTourPhotos}`;
   }
 }
@@ -506,7 +506,7 @@ function renderShuttleAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalShuttlePhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Gshuttle${i}.jpg`;
+    imgThumb.src = `gallery/Gshuttle${i}.webp`;
     imgThumb.alt = `Foto Shuttle ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -554,7 +554,7 @@ function updateShuttleGalleryImage() {
   const counter = document.getElementById('shuttleGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Gshuttle${currentShuttleIndex}.jpg`;
+    lightboxImg.src = `gallery/Gshuttle${currentShuttleIndex}.webp`;
     counter.innerText = `Foto ${currentShuttleIndex} dari ${totalShuttlePhotos}`;
   }
 }
@@ -577,7 +577,7 @@ function renderRakumAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalRakumPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Grakum${i}.jpg`;
+    imgThumb.src = `gallery/Grakum${i}.webp`;
     imgThumb.alt = `Foto Ranu Kumbolo ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -625,7 +625,7 @@ function updateRakumGalleryImage() {
   const counter = document.getElementById('rakumGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Grakum${currentRakumIndex}.jpg`;
+    lightboxImg.src = `gallery/Grakum${currentRakumIndex}.webp`;
     counter.innerText = `Foto ${currentRakumIndex} dari ${totalRakumPhotos}`;
   }
 }
@@ -648,7 +648,7 @@ function renderReguloAlbumGrid() {
   container.innerHTML = '';
   for (let i = 1; i <= totalReguloPhotos; i++) {
     const imgThumb = document.createElement('img');
-    imgThumb.src = `gallery/Gregulo${i}.jpg`;
+    imgThumb.src = `gallery/Gregulo${i}.webp`;
     imgThumb.alt = `Foto Ranu Regulo ${i}`;
     imgThumb.className = 'album-thumb-item';
     imgThumb.onclick = function() {
@@ -696,7 +696,7 @@ function updateReguloGalleryImage() {
   const counter = document.getElementById('reguloGalleryCounter');
   
   if (lightboxImg && counter) {
-    lightboxImg.src = `gallery/Gregulo${currentReguloIndex}.jpg`;
+    lightboxImg.src = `gallery/Gregulo${currentReguloIndex}.webp`;
     counter.innerText = `Foto ${currentReguloIndex} dari ${totalReguloPhotos}`;
   }
 }
@@ -724,43 +724,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const bromoImg = document.getElementById('bromoGalleryImg');
     if (bromoImg) {
       const currentBromo = ((gallerySlideIndex - 1) % 31) + 1;
-      bromoImg.src = `gallery/Gbromo${currentBromo}.jpg`;
+      bromoImg.src = `gallery/Gbromo${currentBromo}.webp`;
     }
 
     // 2. Sampul Tumpak Sewu
     const tumpakImg = document.getElementById('tumpakGalleryImg');
     if (tumpakImg) {
       const currentTumpak = ((gallerySlideIndex - 1) % 41) + 1;
-      tumpakImg.src = `gallery/Gwaterfall${currentTumpak}.jpg`;
+      tumpakImg.src = `gallery/Gwaterfall${currentTumpak}.webp`;
     }
 
     // 3. Sampul City Tour
     const cityTourImg = document.getElementById('cityTourGalleryImg');
     if (cityTourImg) {
       const currentCityTour = ((gallerySlideIndex - 1) % 13) + 1;
-      cityTourImg.src = `gallery/Gcitytour${currentCityTour}.jpg`;
+      cityTourImg.src = `gallery/Gcitytour${currentCityTour}.webp`;
     }
 
     // 4. Sampul Shuttle Ranupani
     const shuttleImg = document.getElementById('shuttleGalleryImg');
     if (shuttleImg) {
       const currentShuttle = ((gallerySlideIndex - 1) % 34) + 1;
-      shuttleImg.src = `gallery/Gshuttle${currentShuttle}.jpg`;
+      shuttleImg.src = `gallery/Gshuttle${currentShuttle}.webp`;
     }
 
     // 5. Sampul Ranu Kumbolo
     const rakumImg = document.getElementById('rakumGalleryImg');
     if (rakumImg) {
       const currentRakum = ((gallerySlideIndex - 1) % 47) + 1;
-      rakumImg.src = `gallery/Grakum${currentRakum}.jpg`;
+      rakumImg.src = `gallery/Grakum${currentRakum}.webp`;
     }
 
     // 6. Sampul Ranu Regulo
     const reguloImg = document.getElementById('reguloGalleryImg');
     if (reguloImg) {
       const currentRegulo = ((gallerySlideIndex - 1) % 60) + 1;
-      reguloImg.src = `gallery/Gregulo${currentRegulo}.jpg`;
-  }
+      reguloImg.src = `gallery/Gregulo${currentRegulo}.webp`;
+    }
 
   }, 3000);
 });
