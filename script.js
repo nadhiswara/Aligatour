@@ -3,10 +3,10 @@ const waAdminNumber = "628563532918";
 
 // Data Opsi Pilihan Paket Trip Resmi Aligatour
 const tripData = {
-  "shuttle-ranupane": {
-    title: "Private Shuttle Trip (Malang - Basecamp Ranu Pane PP)",
+  "shuttle-ranupani": {
+    title: "Private Shuttle Trip (Malang - Basecamp Ranu Pani PP)",
     images: ["gallery/shuttle1.jpg", "gallery/shuttle2.jpg"],
-    desc: "Transportasi shuttle fleksibel Pergi-Pulang Malang ke Basecamp Ranu Pane. Free Fasilitas: Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air, & Dokumentasi.",
+    desc: "Transportasi shuttle fleksibel Pergi-Pulang Malang ke Basecamp Ranu Pani. Free Fasilitas: Welcome Snack & Drink, Full Powerbank, Free Wi-Fi, Insta360 X4 Air, & Dokumentasi.",
     subPackages: [
       { name: "Jimny Katana", detail: "Kapasitas 1-2 seats | Include: Transport, Driver, BBM, Parkir", price: "Rp 800.000" },
       { name: "Avanza", detail: "Kapasitas 1-4 seats | Include: Transport, Driver, BBM, Parkir", price: "Rp 1.400.000" },
@@ -488,7 +488,7 @@ function updateCityTourGalleryImage() {
   }
 }
 
-// 8. FITUR POPUP ALBUM & LIGHTBOX SHUTTLE RANUPANE (34 FOTO)
+// 8. FITUR POPUP ALBUM & LIGHTBOX SHUTTLE RANUPANI (34 FOTO)
 let currentShuttleIndex = 1;
 const totalShuttlePhotos = 34;
 
@@ -741,7 +741,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cityTourImg.src = `gallery/Gcitytour${currentCityTour}.jpg`;
     }
 
-    // 4. Sampul Shuttle Ranupane
+    // 4. Sampul Shuttle Ranupani
     const shuttleImg = document.getElementById('shuttleGalleryImg');
     if (shuttleImg) {
       const currentShuttle = ((gallerySlideIndex - 1) % 34) + 1;
