@@ -37,7 +37,7 @@ header {
 /* BACKGROUND HEADER HALAMAN TENTANG */
 #about-header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%),
-              url('gallery/bgabout.webp') no-repeat center center / cover;
+              url('gallery/bg\ about.webp') no-repeat center center / cover;
 }
 
 .header-logo {
