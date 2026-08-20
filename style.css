@@ -14,11 +14,9 @@ body {
   line-height: 1.6;
 }
 
-/* HERO / HEADER SECTION */
-header, .page-header {
+/* 1. TATA LETAK & HEADER (SEMUA HALAMAN) */
+header {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%),
-              url('gallery/bg\ header.webp') no-repeat center center / cover;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +26,18 @@ header, .page-header {
   color: #ffffff;
   padding: 100px 20px 60px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* BACKGROUND HEADER HALAMAN BERANDA */
+#home-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%),
+              url('gallery/bg\ header.webp') no-repeat center center / cover;
+}
+
+/* BACKGROUND HEADER HALAMAN TENTANG */
+#about-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%),
+              url('gallery/bgabout.webp') no-repeat center center / cover;
 }
 
 .header-logo {
@@ -889,7 +899,3 @@ footer {
   }
 }
 
-header, .page-header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.75) 100%),
-              url('gallery/bgabout.webp') no-repeat center center / cover;
-}

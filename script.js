@@ -630,9 +630,9 @@ function updateRakumGalleryImage() {
   }
 }
 
-// FITUR POPUP TATA LETAK ALBUM & LIGHTBOX 60 FOTO RANU REGULO (Gregulo)
+// FITUR POPUP TATA LETAK ALBUM & LIGHTBOX 30 FOTO RANU REGULO (Gregulo)
 let currentReguloIndex = 1;
-const totalReguloPhotos = 60;
+const totalReguloPhotos = 30;
 
 function openReguloGallery() {
   renderReguloAlbumGrid();
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Sampul Ranu Regulo
     const reguloImg = document.getElementById('reguloGalleryImg');
     if (reguloImg) {
-      const currentRegulo = ((gallerySlideIndex - 1) % 60) + 1;
+      const currentRegulo = ((gallerySlideIndex - 1) % 30) + 1;
       reguloImg.src = `gallery/Gregulo${currentRegulo}.webp`;
     }
 
